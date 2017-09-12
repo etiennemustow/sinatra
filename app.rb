@@ -13,15 +13,8 @@ get '/fancy' do
 end
 
 get '/cat' do
-  "<div style='border: 3px dashed red'>
-    <img src ='http://bit.ly/1eze8aE'>
-  </div>"
-end
-
-get '/ray' do
-  "<div style='border: 6px dashed green'>
-    <img src='http://bit.ly/2xZt6po'>
-    </div>"
+  @name = ["Luffy", "Zoro", "Sanji"].sample
+  erb(:index)
 end
 
 
